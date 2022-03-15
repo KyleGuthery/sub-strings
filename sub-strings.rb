@@ -1,5 +1,5 @@
 def substrings(string, dictionary)
-  array = string.split(" ")
+  array = string.downcase.split(" ")
   hashed = Hash.new
   array.each do |item|
     dictionary.each do |subs|
